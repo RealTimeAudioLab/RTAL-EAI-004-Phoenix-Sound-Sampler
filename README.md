@@ -3,7 +3,7 @@ The Commodore SFX Sound Sampler is a rare hardware cartridge released by Commodo
 
 Here, it is being redeveloped on an ESP32, no C64 and SFX needed.
 
-Under Development - further Information soon.
+Work in Progress - further Information soon.
 
 <p align="center">
   
