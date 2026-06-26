@@ -18,3 +18,10 @@ Work in Progress - further Information soon.
   
 *Figure 2 – C64 SFX ESP32 Version Menu*
 </p>
+
+<p align="center">
+  
+<img src="images/SFX_Sound_Sampler.jpg" width="900">
+  
+*Figure 3 – C64 SFX ESP32 Version, this is what he could look like later on.*
+</p>
