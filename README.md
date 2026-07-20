@@ -1,4 +1,4 @@
-# Project Phoenix
+# Project Phoenix Sound Sampler
 
 > **The Return of the Hardware Sampler**
 
