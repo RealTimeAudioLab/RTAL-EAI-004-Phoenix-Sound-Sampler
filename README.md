@@ -195,9 +195,8 @@ Everything is part of the engineering story.
 Project_Phoenix/
 
 firmware/
-hardware/
-mechanics/
-docs/
+schematic/
+doc/
 images/
 audio_examples/
 
