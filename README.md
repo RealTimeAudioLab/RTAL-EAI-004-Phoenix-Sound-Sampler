@@ -1,15 +1,22 @@
 # Project Phoenix Sound Sampler
 
-> **The Return of the Hardware Sampler**
+# 🎹 The Return of the Hardware Sampler
 
-An open embedded hardware sampler designed from the ground up ---
-inspired by the legendary Commodore 64 SFX Sound Sampler, reimagined
-with modern DSP, SD storage, multitimbrality and a completely new
-software architecture.
+### *An Open Engineering Project by Realtime Audio Lab (RTAL)*
+
+*Inspired by the legendary Commodore 64 SFX Sound Sampler --- redesigned
+for the modern embedded world.*
 
 ------------------------------------------------------------------------
 
-# Hero Image
+> **Project Phoenix is not simply another sampler.**
+>
+> It is the complete documentation of designing, engineering and
+> building a professional embedded musical instrument from scratch.
+
+------------------------------------------------------------------------
+
+# 📸 Hero Image
 
 </p>
 
@@ -17,11 +24,11 @@ software architecture.
   
 <img src="images/SFX_Sound_Sampler.jpg" width="900">
 
-**Project Phoenix --- currently under development**
+*A vision of the final instrument.*
 
 ------------------------------------------------------------------------
 
-# Current Development Prototype
+# 📸 Current Development Prototype
 
 </p>
 
@@ -29,74 +36,114 @@ software architecture.
   
 <img src="images/Phoenix_Development.jpg" width="900">
 
-*Current ESP32-S3 based development prototype used for firmware and
-hardware evaluation.*
+*The current ESP32-S3 based hardware platform used for firmware, DSP and
+hardware development.*
 
 ------------------------------------------------------------------------
 
-# Why Phoenix?
+# Why Project Phoenix?
 
-Project Phoenix is not intended to compete with commercial products.
+Modern hardware samplers are often closed systems.
 
-Instead, it documents the complete engineering process behind designing
-a modern embedded hardware sampler.
+Phoenix follows another philosophy:
 
-Every architectural decision, firmware milestone, hardware revision and
-DSP algorithm will be documented and published openly.
-
-------------------------------------------------------------------------
-
-# Design Goals
-
-  Goal                           Status
-  ----------------------------- --------
-  ESP32-S3 Platform                ✅
-  Open Source Firmware             🚧
-  Open Hardware Documentation      🚧
-  SD Card Sample Library           🚧
-  Smart Sample Analysis            ✅
-  Vintage Sampler Engine           ✅
-  Multisample Engine               🚧
-  Velocity Layers                  🚧
-  Round Robin                      🚧
-  Smart Loop Engine                🚧
-  Touch User Interface             🚧
-
-------------------------------------------------------------------------
-
-# Philosophy
-
-Phoenix follows the principles of the **Realtime Audio Lab (RTAL)**:
-
+-   Open Hardware
+-   Open Firmware
 -   Open Engineering
--   Educational Value
--   Long-Term Maintainability
--   Transparent Development
--   Knowledge Sharing
+-   Open Documentation
+
+Every important engineering decision will be documented.
+
+Visitors are invited to follow the complete journey from the very first
+prototype to Version 1.0.
 
 ------------------------------------------------------------------------
 
-# Current Features
+# Engineering Philosophy
+
+Project Phoenix is built around five principles:
+
+-   Engineering before marketing
+-   Simplicity where possible
+-   Professional audio quality
+-   Educational value
+-   Long-term maintainability
+
+------------------------------------------------------------------------
+
+# Current Development Status
+
+  Module                    Status
+  ------------------------ --------
+  Audio Engine                ✅
+  Smart Sample Analysis       ✅
+  Vintage Sampler Engine      ✅
+  SD Card Browser             ✅
+  Multisamples                🚧
+  Velocity Layers             🚧
+  Round Robin                 🚧
+  Smart Loop Engine           🚧
+  Touch User Interface        🚧
+  Complete Hardware           🚧
+
+------------------------------------------------------------------------
+
+# Planned Hardware
+
+-   ESP32-S3
+-   PCM1808 Audio ADC
+-   PCM5102 DAC
+-   SD Card
+-   MIDI In / Out
+-   OLED Display
+-   Future Touch Display
+-   Dedicated User Interface
+
+------------------------------------------------------------------------
+
+# Software Architecture
+
+``` text
+             MIDI
+               │
+               ▼
+        User Interface
+               │
+               ▼
+        Sample Manager
+               │
+     ┌─────────┴─────────┐
+     ▼                   ▼
+ Smart Analysis     Audio Engine
+     ▼                   ▼
+ Vintage DSP       Effects Engine
+     └─────────┬─────────┘
+               ▼
+           PCM5102 DAC
+```
+
+------------------------------------------------------------------------
+
+# Major Features
 
 ## Sampling
 
--   Stereo Recording
 -   Smart Sample Analysis
--   Auto Trim
--   Auto Normalize
+-   Automatic Trim
+-   Automatic Normalize
 -   Zero Crossing Detection
--   Non-Destructive Editing
+-   Non-destructive Editing
 
 ## Playback
 
--   16 Voices
+-   Polyphonic Playback
+-   Keygroups
+-   Velocity Layers
+-   Round Robin
 -   ADSR
 -   Filters
 -   Pitch Bend
 -   Vintage DAC Simulation
--   Keygroups
--   Velocity Layers
--   Round Robin
 
 ## Storage
 
@@ -109,76 +156,94 @@ Phoenix follows the principles of the **Realtime Audio Lab (RTAL)**:
 
 # Development Roadmap
 
-Unit End 2026
-
-- Smart Sampling
-- Vintage Engine
-- Multisample
-- Round Robin
-- Keygroups
-
-Status Juli 2026
-
-- Smart Loop Engine
-- Touch User Interface
-- Phoenix Version 1.0
+``` text
+v0.1   Prototype
+v0.3   Audio Engine
+v0.5   Sample Browser
+v0.7   Smart Sampling
+        ▲
+        │ YOU ARE HERE
+        ▼
+v0.8   Smart Loop Engine
+v0.9   Touch Interface
+v1.0   First Public Release
+```
 
 ------------------------------------------------------------------------
 
 # Open Engineering
 
-Unlike many commercial products, Project Phoenix documents the complete
-engineering process.
+Unlike commercial products, Phoenix documents:
 
-Included in this repository over time:
-
--   Firmware source code
--   Hardware schematics
--   Mechanical concepts
+-   firmware evolution
+-   hardware revisions
 -   DSP algorithms
--   Audio processing techniques
--   Performance measurements
--   Engineering notes
--   Design decisions
+-   performance measurements
+-   design decisions
+-   engineering notes
+-   experiments
+-   failures and improvements
+
+Everything is part of the engineering story.
 
 ------------------------------------------------------------------------
 
-# Current Development Status
+# Repository Structure
 
-Firmware
+``` text
+Project_Phoenix/
 
-██████████░░░░░░░░░░ 45%
+firmware/
+hardware/
+mechanics/
+docs/
+images/
+audio_examples/
 
-Hardware
-
-███████░░░░░░░░░░░░░ 30%
-
-Mechanical Design
-
-████░░░░░░░░░░░░░░░░ 15%
-
-------------------------------------------------------------------------
-
-# Planned Repository Structure
-
-- Project_Phoenix/
-- docs/
-- firmware/
-- hardware/
-- mechanics/
-- images/
-- audio_examples/
-- README.md
-- CHANGELOG.md
-- LICENSE
+README.md
+CHANGELOG.md
+LICENSE
+```
 
 ------------------------------------------------------------------------
 
 # Follow the Journey
 
-Project Phoenix is a long-term engineering project documenting the
-evolution of a modern embedded hardware sampler---from the first
-prototype to the finished musical instrument.
+Project Phoenix is intended to become one of the most comprehensively
+documented open embedded sampler projects available.
+
+Whether you are interested in:
+
+-   Embedded Systems
+-   Audio DSP
+-   MIDI
+-   Firmware Architecture
+-   Hardware Design
+-   Digital Audio
+
+...you are welcome to follow the development.
+
+------------------------------------------------------------------------
+
+# About RTAL
+
+## Realtime Audio Lab
+
+**Engineering Heritage Archive**
+
+Sharing over four decades of experience in:
+
+-   Embedded Audio Systems
+-   Digital Musical Instruments
+-   Hi-Fi Engineering
+-   Vintage Hardware Restoration
+-   Open Engineering Documentation
+
+------------------------------------------------------------------------
+
+⭐ **If you enjoy following long-term engineering projects, consider
+starring this repository.**
+
 
 ------------------------------------------------------------------------
 
