@@ -73,18 +73,19 @@ Project Phoenix is built around five principles:
 
 # Current Development Status
 
-  Module                    Status
-  ------------------------ --------
-  Audio Engine                ✅
-  Smart Sample Analysis       ✅
-  Vintage Sampler Engine      ✅
-  SD Card Browser             ✅
-  Multisamples                🚧
-  Velocity Layers             🚧
-  Round Robin                 🚧
-  Smart Loop Engine           🚧
-  Touch User Interface        🚧
-  Complete Hardware           🚧
+| Module                  | Status |
+|-------------------------|:------:|
+| Audio Engine            | ✅ |
+| Smart Sample Analysis   | ✅ |
+| Vintage Sampler Engine  | ✅ |
+| SD Card Browser         | ✅ |
+| Multisamples            | ✅ |
+| Velocity Layers         | ✅ |
+| Round Robin             | ✅ |
+| Smart Loop Engine       | 🚧 |
+| Touch User Interface    | 🚧 |
+| Complete Hardware       | 🚧 |
+
 
 ------------------------------------------------------------------------
 
