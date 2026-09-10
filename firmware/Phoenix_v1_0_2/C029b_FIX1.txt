@@ -1,0 +1,11 @@
+Project Phoenix v0.8.04b C029b FIX1
+===================================
+Compatibility fix for Arduino IDE 1.8.19 / ESP32 Core 2.0.16.
+
+Changed:
+- Replaced esp_cpu_get_cycle_count() with esp_cpu_get_ccount() in the DSP profiler.
+- esp_cpu.h was already included; no DSP or audio behavior was changed.
+
+Reason:
+ESP32 Core 2.0.16 exposes esp_cpu_get_ccount() for the ESP32-S3 cycle counter.
+The newer/different symbol esp_cpu_get_cycle_count() is not available in this toolchain.

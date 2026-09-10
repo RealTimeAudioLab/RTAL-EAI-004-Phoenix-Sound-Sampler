@@ -1,0 +1,43 @@
+PROJECT PHOENIX v1.0.0 FINAL
+================================
+
+STATUS
+------
+First official stable release.
+
+Release basis
+-------------
+Phoenix v1.0.0 FINAL is a release-only versioning of the hardware-validated
+v0.9.0 RC1 baseline. No audio, MIDI, sequencer, storage, multisample, USB,
+filter, delay, or DSP behavior was intentionally changed for this release.
+
+Validated architecture
+----------------------
+- ESP32-S3, 240 MHz, PSRAM
+- 32 kHz audio / 128 frame blocks
+- 12-voice sampler engine
+- Audio task Core1 / P24
+- MIDI task Core0 / P10
+- Dedicated realtime sequencer Core0 / P8
+- Control/UI Core0 / P3
+- External MIDI clock: continuous F8, FA START, FC STOP
+- Sample-accurate sequencer scheduling inside 128-frame audio blocks
+- Transactional bank storage with cooperative SD I/O
+- BANK_VERSION 15
+- MULTISAMPLE_VERSION 10
+- O3 restricted to PhoenixAudioManager.cpp
+- no fast-math
+
+Final RC validation
+-------------------
+User hardware testing reported no audible negative behavior. Long-run telemetry
+remained free of audio overruns/underruns, MIDI/clock/sequence command drops,
+and ownership failures. The dedicated realtime sequencer remained at batch=1
+with low microsecond-level scheduling lateness. Two historical sched_miss events
+were observed in the long C036d/RC validation and remained non-increasing and
+inaudible.
+
+Release policy
+--------------
+This archive is the frozen v1.0.0 release baseline. Future development should
+branch from this exact release and not modify it in place.

@@ -1,0 +1,43 @@
+PROJECT PHOENIX v1.0.1 FINAL
+Bank-Load Watchdog Fix
+========================================
+
+Base
+----
+v1.0.0 FINAL, unchanged except for the cooperative scheduler yield in the
+multisample WAV import/load hot loop and release identification.
+
+Problem
+-------
+Large multisample banks can keep PhoenixControl/Core 0 busy long enough while
+loading several WAV files that IDLE0 does not run in time and the ESP32-S3 task
+watchdog aborts. The observed crash occurs after BANK QUIESCE during BANK_LOAD,
+while AudioTask/Core 1 remains healthy.
+
+Fix
+---
+PhoenixAudioManager::importWavToKeygroupVariant() previously called delay(0)
+every 1024 output frames while importing/resampling a multisample WAV.
+
+v1.0.1 changes this to delay(1). This gives the FreeRTOS scheduler and IDLE0
+a guaranteed scheduling opportunity during long bank loads. Progress reporting
+remains at the same 1024-frame cadence.
+
+Unchanged
+---------
+- Audio DSP and render path
+- 32 kHz / 128-frame audio configuration
+- 12-voice engine
+- MIDI / voice ownership
+- SeqRT and sample-accurate scheduling
+- Pattern / Song behavior
+- Bank transactional storage
+- USB Mass Storage
+- BANK_VERSION 15
+- MULTISAMPLE_VERSION 10
+
+Validation target
+-----------------
+Load the Phoenix Demo Song BANK99 containing eight multisample WAV files.
+Expected: no IDLE0 watchdog, no reboot, load completes, and critical realtime
+diagnostics remain at zero.

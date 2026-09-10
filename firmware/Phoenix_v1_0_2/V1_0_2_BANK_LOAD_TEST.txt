@@ -1,0 +1,20 @@
+Phoenix v1.0.2 Bank-Load Test
+
+1. Flash v1.0.2.
+2. Use the unchanged Phoenix Demo BANK99 that reproduced the watchdog.
+3. Load BANK99.
+4. Capture Serial output beginning with:
+   V1.0 BANK QUIESCE reason=BANK_LOAD
+5. Expected phase diagnostics:
+   V1.0.2 LOAD PHASE=AUDIO begin
+   V1.0.2 MS CFG begin ...
+   V1.0.2 MS LOAD begin ...
+   V1.0.2 MS LOAD ok ...
+   ...
+   V1.0.2 MS CFG OK ...
+   V1.0.2 LOAD PHASE=AUDIO OK
+   V1.0.2 LOAD PHASE=PATTERNS OK
+   V1.0.2 LOAD PHASE=SONG OK
+6. No task_wdt / reboot should occur.
+
+If a watchdog still occurs, the last emitted phase/file marker identifies the exact blocking section.

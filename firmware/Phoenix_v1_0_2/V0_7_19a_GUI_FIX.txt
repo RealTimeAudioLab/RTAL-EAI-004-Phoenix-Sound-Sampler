@@ -1,0 +1,7 @@
+Project Phoenix v0.7.19a
+Quattro Keyboard GUI correction
+
+- Removed inverse rendering from all QUATTRO KEYBOARD menu rows and values.
+- The selected parameter is now indicated exclusively by a leading '>' arrow.
+- Edit mode no longer changes text polarity.
+- Pitchbend functionality is unchanged from v0.7.19.
