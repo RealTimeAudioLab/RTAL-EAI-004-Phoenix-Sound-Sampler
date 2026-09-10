@@ -40,6 +40,22 @@ for the modern embedded world.*
 hardware development.*
 
 ------------------------------------------------------------------------
+## 📸 Draw Waveform
+<p align="center">
+  <img src="images/Phoenix_Draw_Waveform.gif"
+       alt="WELLENBAD Show Sequencer demonstration"
+       width="800">
+</p>
+
+------------------------------------------------------------------------
+## 📸 Sample Editor
+<p align="center">
+  <img src="images/Phoenix_Sample_Editor.gif"
+       alt="WELLENBAD Show Sequencer demonstration"
+       width="800">
+</p>
+
+------------------------------------------------------------------------
 
 # Why Project Phoenix?
 
