@@ -1,4 +1,4 @@
-# 🔥 PROJECT PHOENIX
+# 🔥 PROJECT PHOENIX SOUND SAMPLER
 
 ### ESP32-S3 Polyphonic Hardware Sampler  
 **4 Sample Slots · 12 Voices · Multisampling · Realtime Sequencer · Sample Editor · MIDI · USB · Phoenix Librarian**
