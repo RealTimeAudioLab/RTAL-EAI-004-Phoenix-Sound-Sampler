@@ -1,0 +1,12 @@
+PHOENIX_BANK_INFO=1
+NAME=Phoenix Demo Rave Space Glide
+CATEGORY=Demo
+AUTHOR=RealTimeAudioLab / RTAL
+DESCRIPTION=Electronic 120 BPM demo rebuilt around Glide_C3, Space_C3 and Rave_C3. Uses internal Phoenix sequencer, Echo, Filter and Vintage processing.
+LICENSE=Demo material - source sample rights remain with their owner.
+TAGS=demo,electronic,rave,space,glide,120bpm,sequencer,echo,filter,vintage
+TEMPLATE=Phoenix v1.0.2 Demo V3
+SLOT1_NAME=Drum Kit
+SLOT2_NAME=Bass C3
+SLOT3_NAME=Glide / Space Velocity
+SLOT4_NAME=Rave C3
