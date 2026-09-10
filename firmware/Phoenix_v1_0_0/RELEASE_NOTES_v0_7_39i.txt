@@ -1,3 +1,0 @@
-v0.7.39i is a measurement-only Performance Audit release.
-It adds consolidated Serial diagnostics without changing sound, timing rules, GUI layout or stored file formats.
-Use the measurements to establish the baseline before Phase 4 / v0.7.40 Boot Manager.
