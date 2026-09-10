@@ -3,7 +3,7 @@
 ### ESP32-S3 Polyphonic Hardware Sampler  
 **4 Sample Slots · 12 Voices · Multisampling · Realtime Sequencer · Sample Editor · MIDI · USB · Phoenix Librarian**
 
-**Version 1.0.0 FINAL**
+**Version 1.0.2 FINAL**
 
 [![ESP32-S3](https://img.shields.io/badge/MCU-ESP32--S3-000000?style=for-the-badge&logo=espressif)](https://www.espressif.com/)
 [![Arduino](https://img.shields.io/badge/Arduino-1.8.19-00878F?style=for-the-badge&logo=arduino&logoColor=white)](https://www.arduino.cc/)
@@ -76,7 +76,7 @@ Phoenix v1.0.0 FINAL is the first frozen stable release of the platform.
 
 ### At a glance
 
-| Feature | Phoenix v1.0.0 |
+| Feature | Phoenix v1.0.2 |
 |---|---|
 | MCU | ESP32-S3 @ 240 MHz with PSRAM |
 | Polyphony | **12 global sample voices** |
@@ -598,7 +598,7 @@ Runtime diagnostics expose audio, MIDI, sequencer and storage health counters, m
 
 # ✅ Release status
 
-## Phoenix v1.0.0 FINAL
+## Phoenix v1.0.2 FINAL
 
 The first stable Phoenix release was frozen after the v0.9.0 RC1 regression and endurance phase.
 
@@ -646,7 +646,7 @@ It is built around a simple idea:
 **Sample · Sculpt · Map · Sequence · Perform**
 
 ESP32-S3 Hardware Sampler  
-Phoenix v1.0.0 FINAL
+Phoenix v1.0.2 FINAL
 
 **RealTimeAudioLab / RTAL**
 
