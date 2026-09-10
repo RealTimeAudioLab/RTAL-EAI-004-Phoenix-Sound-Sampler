@@ -1,5 +1,3 @@
-<div align="center">
-
 # 🔥 Project Phoenix Firmware
 
 ### ESP32-S3 Realtime Sampler Firmware  
@@ -794,8 +792,6 @@ See LICENSE for details.
 ```
 
 ---
-
-<div align="center">
 
 # PROJECT PHOENIX FIRMWARE
 
