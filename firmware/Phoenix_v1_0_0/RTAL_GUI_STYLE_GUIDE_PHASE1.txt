@@ -1,0 +1,9 @@
+RTAL Phoenix GUI Style Guide - Phase 1
+
+1. Product title: PHOENIX SOUND SAMPLER.
+2. Selection uses the Phoenix arrow; no inverted menu rows.
+3. The right footer field is reserved for navigation, normally 8BACK.
+4. Footer actions must be split across fields rather than combined until clipped.
+5. The LEVEL meter uses three readable scale anchors: 8, 5 and 1.
+6. Standard actions use consistent terms: PLAY, STOP, SELECT, BACK, EDIT, DONE.
+7. New GUI work must preserve the fixed header, content and footer zones.

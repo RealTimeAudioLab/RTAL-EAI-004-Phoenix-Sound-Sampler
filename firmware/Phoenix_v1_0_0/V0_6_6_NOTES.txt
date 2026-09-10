@@ -1,0 +1,10 @@
+Project Phoenix v0.6.6 - Echo Encoder Edit Workflow
+
+Changes:
+- Echo screen now uses Browse/Edit mode.
+- Browse: encoder/F1/F3 selects DELAY, FEEDBACK or MIX.
+- Encoder push enters/leaves value edit mode.
+- Edit: encoder/F1/F3 changes selected value.
+- F7 remains Play/Stop.
+- F8 returns to main menu.
+- Echo tail from v0.6.5 remains active.

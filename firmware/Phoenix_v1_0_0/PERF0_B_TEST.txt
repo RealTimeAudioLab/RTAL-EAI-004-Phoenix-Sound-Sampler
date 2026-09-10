@@ -1,0 +1,38 @@
+Project Phoenix v0.8.04d C029d PERF0-B
+
+Purpose: controlled compiler comparison from the same C029d source.
+DSP profiler: OFF.
+AUDIO/PERF diagnostics: ON.
+
+Variant A: baseline compiler settings
+Variant B: PhoenixAudioManager.cpp only: #pragma GCC optimize ("O3")
+Variant C: PhoenixAudioManager.cpp only: #pragma GCC optimize ("O3") + #pragma GCC optimize ("fast-math")
+
+TEST PROTOCOL
+1. Use the same bank/sample and the same Phoenix settings for A, B and C.
+2. After boot, let the unit idle for ~10 s.
+3. Hold 8 voices for ~10 s.
+4. Hold 10 voices for ~10 s.
+5. Hold 11 voices for ~10 s.
+6. Hold 12 voices for at least 20-30 s.
+7. Release all notes and let the unit idle for ~5 s.
+8. Save/copy the complete serial log separately for each build.
+
+Compare especially:
+- audio avg / load
+- winmax / peak
+- risk / overrun / underruns
+- midi_cmd_drop / midi_ctl_drop
+- firmware size
+
+For PERF0-C additionally listen/test:
+- high filter resonance
+- long releases and very low levels
+- pitch bend / glide
+- FORWARD and ALTERNATE loops
+- loop crossfade
+- Vintage processing
+- Normalize/DC correction
+- Sustain
+
+Do not judge C only by CPU load: fast-math is accepted only if audio behavior remains correct.

@@ -1,0 +1,41 @@
+Project Phoenix v0.7.10 - TRIGGER LEVEL
+
+Added:
+- New TRIGGER LEVEL screen in Sound Sampling.
+- Recording can now start manually or wait for input above a configurable threshold.
+- Trigger threshold level 1..8.
+- Audio engine adds AUDIO_ARMED state; input is monitored until threshold is reached.
+- Sound Sampling shows WAIT TRIG while armed.
+
+Kept:
+- LOOP from v0.7.9.
+- Disk Utilities, Tuning Fork, MIDI Type/Channel, Echo, Pitch, Waveform editor.
+
+v0.7.12 - SAMPLE EDITOR
+- Added SAMPLE EDITOR to SOUND SAMPLING menu.
+- Added Loop Start / Loop End editor with waveform markers.
+- Added F1/F3 cursor movement, F5 marker select, Encoder Push set marker.
+- Added F7 playback of selected loop range.
+
+
+v0.7.13b
+- Added Audio Test Generator in Service Mode.
+- Variable waveform, frequency and level.
+
+v0.7.13c FIX8C – CONFIG.TXT System Settings
+- Systemweite Einstellungen werden jetzt in /PHOENIX/CONFIG.TXT gespeichert.
+- NVS wird für diese Einstellungen nicht mehr verwendet.
+- /PHOENIX/BANKS, /PHOENIX/WAV und /PHOENIX/EXPORT werden automatisch angelegt.
+- Bei fehlender CONFIG.TXT werden Defaults verwendet und eine neue Datei erzeugt.
+- Bei fehlender SD werden Defaults nur im RAM verwendet.
+
+Project Phoenix v0.7.13e
+- Sample Browser Phase 1 added.
+
+v0.7.13i – Sample Preview
+- F7 Preview im Sample Browser.
+- Nicht-destruktiver PSRAM-Preview-Puffer.
+- Preview stoppt bei Datei-/Ordnerwechsel und beim Verlassen des Browsers.
+
+Project Phoenix v0.7.29a
+- Added missing PhoenixAudioManager setter definitions for PLAY MODE, EXCLUSIVE GROUP and RETRIGGER LEGATO.
