@@ -98,10 +98,8 @@ Project Phoenix is built around five principles:
 | Multisamples            | ✅ |
 | Velocity Layers         | ✅ |
 | Round Robin             | ✅ |
-| Smart Loop Engine       | 🚧 |
-| Touch User Interface    | 🚧 |
-| Complete Hardware       | 🚧 |
-
+| Smart Loop Engine       | ✅ |
+| Complete Hardware       | ✅ |
 
 ------------------------------------------------------------------------
 
@@ -113,8 +111,7 @@ Project Phoenix is built around five principles:
 -   SD Card
 -   MIDI In / Out
 -   OLED Display
--   Future Touch Display
--   Dedicated User Interface
+-   8 Buttons
 
 ------------------------------------------------------------------------
 
@@ -178,11 +175,8 @@ v0.1   Prototype
 v0.3   Audio Engine
 v0.5   Sample Browser
 v0.7   Smart Sampling
-        ▲
-        │ YOU ARE HERE
-        ▼
 v0.8   Smart Loop Engine
-v0.9   Touch Interface
+v0.9   Endurance-/Regressionstest
 v1.0   First Public Release
 ```
 
