@@ -329,7 +329,7 @@ Phoenix uses transactional bank storage to reduce the risk of destroying an exis
 It works directly with the same Phoenix bank structure used by the hardware.
 
 <p align="center">
-  <img src="docs/images/phoenix-librarian.png" width="820" alt="Phoenix Librarian">
+  <img src="images/RTAL_Wellenbad_Waveform-Editor.JPG" width="820" alt="Phoenix Librarian">
 </p>
 
 ### Librarian features
