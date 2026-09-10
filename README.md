@@ -31,7 +31,7 @@
 
 <p align="center">
   
-<img src="images/SFX_Sound_Sampler.jpg" width="900">
+[<img src="images/SFX_Sound_Sampler.jpg" width="900">](https://github.com/user-attachments/assets/22964ead-7237-4df3-807c-14b0ed8c8876)
 
 *Phoenix 3D printed case.*
 
