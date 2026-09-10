@@ -25,9 +25,9 @@
 
 ------------------------------------------------------------------------
 
-## 📸 Hero Image
+## 📸 Hero Image and 🎵 Hardware Demo — 120 BPM Electronic Track
 
-</p>
+Eight samples · four sequencer tracks · 12-voice engine · no DAW
 
 <p align="center">
   
