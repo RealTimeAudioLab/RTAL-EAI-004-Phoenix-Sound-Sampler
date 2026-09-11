@@ -30,10 +30,10 @@
 Eight samples · four sequencer tracks · 12-voice engine · no DAW
 
 <p align="center">
-  
-[<img src="images/SFX_Sound_Sampler.jpg" width="900">](https://github.com/user-attachments/assets/22964ead-7237-4df3-807c-14b0ed8c8876)
 
-*Phoenix 3D printed case.*
+https://github.com/user-attachments/assets/e0772bab-6228-45ec-986f-b4fcfc21d207  
+
+*RTAL PHOENIX SOUND SAMPLER in his 3D printed case.*
 
 ------------------------------------------------------------------------
 
