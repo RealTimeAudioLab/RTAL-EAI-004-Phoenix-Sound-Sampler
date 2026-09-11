@@ -1,1 +1,0 @@
-v0.7.39l finalizes the Phoenix 1 polyphony policy: 12 voices are the safe default, backed by a shared 16-voice pool. It also fixes compatibility with older banks that contain audio or multisample data but no sequencer files.

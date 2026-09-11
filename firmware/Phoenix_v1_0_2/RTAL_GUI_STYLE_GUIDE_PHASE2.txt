@@ -1,8 +1,0 @@
-RTAL GUI Style Guide - Phase 2
-
-1. F8 is BACK or EXIT. F7 remains the page action.
-2. The right footer zone is reserved for BACK/EXIT wherever navigation is possible.
-3. The RTAL LED meter uses eight rounded horizontal LED frames.
-4. The status box below the meter always shows exactly one concise state.
-5. Shared visual elements are implemented in PhoenixWidgets.
-6. Cursor selection remains arrow-based; menu rows are not inverted.

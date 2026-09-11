@@ -1,4 +1,0 @@
-Project Phoenix v0.7.39m
-
-Final comfort/polish release before Phase 4.
-The version adds numeric progress feedback for blocking load/import operations, rearranges Disk Utilities to LOAD before SAVE, and establishes MULTI with MIDI CH 1 FULL as the initial Quattro Keyboard view.

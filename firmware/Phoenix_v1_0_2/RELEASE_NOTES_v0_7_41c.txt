@@ -1,1 +1,0 @@
-Phoenix v0.7.41c completes the MIDI utility layer for Phoenix 1.0 with a live monitor, activity feedback, global default reset and direct per-parameter map maintenance. MIDI map export/import remains reserved for the PC Editor phase.

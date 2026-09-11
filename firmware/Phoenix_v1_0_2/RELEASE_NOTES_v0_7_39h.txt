@@ -1,2 +1,0 @@
-v0.7.39h begins the System Audit phase with three low-risk usability corrections.
-No audio or sequencer timing behavior was changed.
