@@ -1,0 +1,29 @@
+Phoenix v1.0.3 Hardware Test
+
+1. Boot.
+   Expected serial: V1.0.3 BANK CACHE ready used=<n>
+
+2. Load and start an internal demo Song.
+
+3. During playback repeatedly enter/leave DISK UTILITIES.
+   Expected: no audible hesitation.
+
+4. During playback use F5/F6 across many banks, including rapid changes.
+   Expected: no audible hesitation; USED/EMPTY updates immediately from RAM.
+
+5. Check diagnostics while browsing:
+   risk=0, overrun=0, underruns=0,
+   seq_cmd_drop=0, clk_qdrop=0, tick_drop=0, owner_fail=0.
+
+6. Explicit LOAD:
+   Normal bank load/storage behavior is allowed to stop/quiesce playback.
+
+7. SAVE empty bank:
+   After successful save the selected bank must immediately show USED.
+
+8. DELETE saved bank:
+   After successful delete the selected bank must immediately show EMPTY.
+
+9. USB MASS STORAGE READ/WRITE:
+   Change bank files, safely eject, return.
+   Expected: V1.0.3 BANK CACHE ready used=<n> after remount.
