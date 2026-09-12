@@ -30,8 +30,8 @@
 Eight samples · four sequencer tracks · 12-voice engine · no DAW
 
 <p align="center">
-
-https://github.com/user-attachments/assets/e0772bab-6228-45ec-986f-b4fcfc21d207  
+  
+https://github.com/user-attachments/assets/3d3862e8-fa9f-4ff3-b6ce-55324bc0f917
 
 *RTAL PHOENIX SOUND SAMPLER in his 3D printed case.*
 
