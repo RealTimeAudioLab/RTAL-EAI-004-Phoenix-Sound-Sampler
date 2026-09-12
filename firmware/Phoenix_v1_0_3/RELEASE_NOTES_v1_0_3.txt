@@ -1,0 +1,35 @@
+PROJECT PHOENIX v1.0.3 FINAL SILENT
+
+Purpose
+-------
+Production-use serial cleanup based on v1.0.3 FINAL CLEAN.
+
+Serial policy
+-------------
+PHX_SERIAL_LEVEL=1 (default):
+- one compact boot/version line
+- critical/error messages remain available
+- periodic AUDIO load output disabled
+- periodic PERF output disabled
+- DSP/voice audit periodic output disabled
+- routine bank cache / quiesce / load / save phase info disabled
+- routine multisample LOAD OK / CFG OK info disabled
+- normal task/core startup info disabled
+
+PHX_SERIAL_LEVEL=2:
+- restores development/info output for profiling and debugging
+
+PHX_SERIAL_LEVEL=0:
+- intended for fully silent serial output; direct manual/service reports may still be invoked by explicit diagnostic functions unless separately disabled.
+
+Unchanged
+---------
+- Firmware functional version remains 1.0.3
+- Audio DSP unchanged
+- MIDI unchanged
+- SeqRT unchanged
+- bank/storage logic unchanged
+- BANK_VERSION 15 unchanged
+- MULTISAMPLE_VERSION 10 unchanged
+- diagnostic counters continue to run
+- on-device SYSTEM DIAGNOSTICS remains available
