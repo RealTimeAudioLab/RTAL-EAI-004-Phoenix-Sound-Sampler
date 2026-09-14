@@ -1,0 +1,7 @@
+1. Load BANK37 using Disk Utilities.
+2. Confirm BANK37 is active.
+3. Reset Phoenix without touching the encoder button.
+4. Expected boot: LAST BANK 37 -> LOADING BANK 37 -> BANK 37 READY.
+5. Confirm samples/parameters/patterns/song are from BANK37.
+6. Browse to another bank in Disk Utilities but cancel with F8; reset again. Expected: BANK37.
+7. Optional: hold encoder button continuously during power-up for >120 ms. Expected: service mode; normal last-bank restore intentionally skipped.

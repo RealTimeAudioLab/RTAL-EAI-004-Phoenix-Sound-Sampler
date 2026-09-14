@@ -1,0 +1,17 @@
+Project Phoenix v1.0.12a - Robust Last Bank Restore
+
+Base: v1.0.12 Active Bank Persistence & Encoder Bank Manager
+
+FIXES
+- Robust encoder-button service-mode detection: service mode is entered only if GPIO42 remains LOW for the full ~120 ms sampling window.
+- NVS session writes are checked and immediately read back for verification.
+- Active bank is redundantly stored in /PHOENIX/LASTBANK.CFG.
+- Boot restore uses NVS first and SD fallback if NVS is missing/invalid.
+- If NVS references an unavailable bank and the SD fallback differs, Phoenix tries the fallback bank.
+- Successful restore repairs both persistence stores.
+- LAST BANK xx / SESSION LOAD FAILED status remains visibly on screen long enough to diagnose boot behavior.
+
+UNCHANGED
+- Encoder Bank Manager workflow from v1.0.12.
+- Audio DSP / voice engine / sequencer behavior.
+- BANK_VERSION 15 / MULTISAMPLE_VERSION 10.
